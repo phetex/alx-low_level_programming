@@ -1,5 +1,3 @@
 #!/bin/bash
-
-gcc -S $CFILE
-
+gcc -S $CFIL
 18:17
