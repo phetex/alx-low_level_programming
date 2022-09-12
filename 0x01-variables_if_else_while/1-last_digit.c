@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	int n;
+	int
 
 	srand(time(0));
 
