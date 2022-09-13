@@ -29,7 +29,6 @@ int main(void)
 			while (k < 58)
 
 			{
-
 				putchar(i);
 
 				putchar(j);
@@ -37,8 +36,7 @@ int main(void)
 				putchar(k);
 
 				if (i < 55 || j < 56 || k < 57)
-
-				{
+			{
 
 	        			putchar(44);
 
