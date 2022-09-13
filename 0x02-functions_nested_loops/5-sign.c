@@ -6,7 +6,7 @@
 
  * print_sign - Prints the sign of a number.
 
- * @n: The number of which the sign will be printed.
+ * @n: is The int  that will use for the argument of the function
 
  *
 
