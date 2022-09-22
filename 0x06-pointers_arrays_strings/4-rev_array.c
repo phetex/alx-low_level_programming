@@ -31,3 +31,4 @@ void reverse_array(int *a, int n)
 		print_array(a, sizeof(a) / sizeof(int));
 		return (0);
 	}
+}

@@ -11,23 +11,24 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int e = 0, f = 0;
+	int a = 0, b = 0;
 
-	while (src[f])
+	while (src[b])
 	{
-		f++;
+		b++;
 	}
 
-	while (e < n && src[e])
+	while (a < n && src[a])
 	{
-		dest[e] = src[e];
-		e++;
+		dest[a] = src[a];
+		a++;
 	}
 
-	while (e < n)
+	while (a < n)
 	{
-		dest [e] = '\0';
-		e++;
+		dest[a] = '\0';
+		a++;
 	}
+
 	return (dest);
 }
