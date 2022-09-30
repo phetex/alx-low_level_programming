@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 			tatol -= coins[position] * aux;
 		}
 
-		position ==;
+		position++;
 	}
 
 	printf("%d\n", change);
