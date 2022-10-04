@@ -84,7 +84,7 @@ char **strtow(char *str)
 			free(strings);
 			return (NULL);
 		}
-		for (l = 0; l < letters; l++)
+		for (1 = 0; 1 < letters; 1++)
 			strings[w][l] = str[index++];
 		strings[w][l] = '\0';
 	}
