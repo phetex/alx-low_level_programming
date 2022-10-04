@@ -58,7 +58,7 @@ int count_words(char *str)
 char **strtow(char *str)
 {
 	char **strings;
-	int index = 0, words, w, letters, 1;
+	int index = 0, words, w, letters, l;
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
@@ -84,7 +84,7 @@ char **strtow(char *str)
 			free(strings);
 			return (NULL);
 		}
-		for (1 = 0; 1 < letters; 1++)
+		for (l = 0; l < letters; l++)
 			strings[w][l] = str[index++];
 		strings[w][l] = '\0';
 	}
