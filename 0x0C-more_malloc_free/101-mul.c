@@ -119,7 +119,6 @@ int main(int argc, char *argv[])
 		tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 - c));
 		c++;
 	}
-	print_array(tabres, lenres);
 	free(tabres);
 	exit(EXIT_SUCCESS);
 	return (0);
