@@ -83,6 +83,26 @@ void *mul_array(char *a1, int len1, char a2, char *a3, int lena)
 	return (a3);
 }
 /**
+ * print_array - prints all digits of an array
+ * @nb: number of elements to print
+ * @a: array of elements
+ */
+void print_array(char *a, int nb)
+{
+	int i = 0;
+
+	while (a[i] == '0' && (i + 1) < nb)
+	{
+		i++;
+	}
+
+	for (; i < nb; i++)
+	{
+		_putchar(a[i]);
+	}
+	_putchar('\n');
+}
+/**
  * main - print the multiplication of 2 numbers
  * @argc: arguement count
  * @argv: arguement vector
@@ -119,6 +139,7 @@ int main(int argc, char *argv[])
 		tabres = mul_array(argv[1], len1, argv[2][i], tabres, (lenres - 1 - c));
 		c++;
 	}
+	print_array(tabres, lenres);
 	free(tabres);
 	exit(EXIT_SUCCESS);
 	return (0);
