@@ -1,21 +1,21 @@
-#include "calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "function_pointers.h"
 
 /**
- * main - ..
+ * main - main
  * @argv: argumnet
  * @argv: vector
  *
  * Return: 0
  */
-int main(imt argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int (*oprt)(int, int);
 
 	if (argc != 4)
 	{
-		primtf("Error\n");
+		printf("Error\n");
 		exit(98);
 	}
 	oprt = get_op_func(argv[2]);
