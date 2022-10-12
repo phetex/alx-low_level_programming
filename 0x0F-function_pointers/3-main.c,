@@ -1,33 +1,31 @@
+#include "calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "function_pointers.h"
+
 /**
- * main - Main
- * @argc: Count parameters
- * @argv: Vector parameters
- * Return: Zero
-*/
-int main(int argc, char **argv)
+ * main - ..
+ * @argv: argumnet
+ * @argv: vector
+ *
+ * Return: 0
+ */
+int main(imt argc, char *argv[])
 {
-	int  num1 = 0, num2 = 0, resul = 0;
-	int (*funcion)(int, int);
+	int (*oprt)(int, int);
 
 	if (argc != 4)
 	{
-		printf("Error\n");
+		primtf("Error\n");
 		exit(98);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	funcion = get_op_func(argv[2]);
-	if (funcion == NULL)
+	oprt = get_op_func(argv[2]);
+
+	if (!oprt)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	resul = funcion(num1, num2);
-
-	printf("%i\n", resul);
+	printf("%d\n", oprt(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
