@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
-  * print_numbers - print strings 
+  * print_numbers - print strings
   * @separator: separator
   * @n: num of element
   *
@@ -19,6 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		va_start(args, n);
 
 		while (i < n)
+
 		{
 			printf("%d", va_arg(args, int));
 
@@ -27,6 +28,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 			i++;
 		}
+
 		va_end(args);
 	}
 	printf("\n");
