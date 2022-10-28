@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * get_endianness - determinate endianness of machine
@@ -7,11 +8,16 @@
 
 int get_endianness(void)
 {
-	unsigned int i = 1;
-	char *c = (char *)&i;
+    int n;
 
-	if (*c)
-		return (1);
-	else
-		return (0);
+    n = get_endianness();
+    if (n != 0)
+    {
+        printf("Little Endian\n");
+    }
+    else
+    {
+        printf("Big Endian\n");
+    }
+    return (0);
 }
