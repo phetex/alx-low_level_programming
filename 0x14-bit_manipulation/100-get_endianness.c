@@ -6,18 +6,14 @@
 * Return: 1 if is little endian, 0 if is a big endian
 */
 
+
 int get_endianness(void)
 {
-    int n;
+	unsigned int i = 1;
+	char *c = (char *)&i;
 
-    n = get_endianness();
-    if (n != 0)
-    {
-        printf("Little Endian\n");
-    }
-    else
-    {
-        printf("Big Endian\n");
-    }
-    return (0);
+	if (*c)
+		return (1);
+	else
+		return (0);
 }
